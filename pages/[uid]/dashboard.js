@@ -14,6 +14,7 @@ import {
   withAuthUserTokenSSR,
   AuthAction
 } from 'next-firebase-auth'
+import LoadingBar from '../../components/LoadingBar'
 
 const Dashboard = function () {
   const AuthUser = useAuthUser()
@@ -59,4 +60,5 @@ export default withAuthUser({
   whenUnauthedBeforeInit: AuthAction.SHOW_LOADER,
   whenUnauthedAfterInit: AuthAction.REDIRECT_TO_LOGIN,
   authPageURL: '/login',
+  LoaderComponent: LoadingBar
 })(Dashboard)

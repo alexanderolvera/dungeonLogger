@@ -1,4 +1,5 @@
 import Navbar from "./Navbar"
+import { Toaster } from 'react-hot-toast'
 
 export default function Layout({ children }) {
 
@@ -6,6 +7,7 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       {children}
+      <Toaster />
     </>
   )
 }

@@ -1,9 +1,15 @@
-import Link from 'next/link'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
+import React from 'react';
+import Link from 'next/link';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 
+
+/**
+ * NavBar component
+ * @return {JSX} component
+ */
 export default function NavBar() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
@@ -26,5 +32,5 @@ export default function NavBar() {
         </Nav>
       </Container>
     </Navbar>
-  )
+  );
 }
